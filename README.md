@@ -36,12 +36,18 @@ This project implements an early-warning defense system that:
 ## 📂 Repository Structure
 
 ```text
-├── data/                  # Sample network traffic logs & threat intelligence feeds
-├── notebooks/             # Jupyter notebooks for data preprocessing & EDA
-├── src/
-│   ├── preprocessing.py   # Log parsing and feature engineering
-│   ├── models.py          # Random Forest & Isolation Forest implementations
-│   └── threat_intel.py    # Threat intelligence matching logic
-├── main.py                # Pipeline execution script
-├── requirements.txt       # Project dependencies
-└── README.md              # Project documentation
+├── app/                      # Web application for UI dashboard
+│   ├── static/               # CSS, JavaScript, and asset files
+│   └── templates/            # HTML templates (Flask/Jinja)
+├── assets/
+│   └── screenshots/          # UI screenshots and project diagrams
+├── config/                   # Configuration files (environment, constants)
+├── data/                     # Project data store
+│   ├── processed/            # Cleaned and engineered features for ML
+│   └── raw/                  # Raw network traffic logs & threat intel feeds
+├── logs/                     # System and application runtime logs
+├── models/                   # Saved/trained ML models (pickle/joblib files)
+├── notebooks/                # Jupyter notebooks for data analysis & EDA
+├── src/                      # Source code for the core backend pipeline
+├── tests/                    # Unit tests and validation scripts
+└── venv/                     # Python virtual environment (hidden/ignored in production)
