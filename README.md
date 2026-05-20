@@ -7,19 +7,19 @@ An AI-powered cybersecurity solution designed to secure critical railway infrast
 Modern railway networks rely heavily on interconnected digital systems for signaling, operations, and passenger services. This makes them potential targets for cyberattacks. 
 
 This project implements an early-warning defense system that:
-* [cite_start]Monitors and analyzes vast volumes of railway network traffic logs[cite: 5].
-* [cite_start]Utilizes unsupervised and supervised Machine Learning models to baseline normal behavior and detect anomalies[cite: 5].
-* [cite_start]Integrates Threat Intelligence Feeds to categorize anomalies into specific attack vectors (e.g., DDoS, unauthorized access)[cite: 5].
-* [cite_start]Prevents operational disruptions to critical components like **Signaling Systems** and **Passenger Information Systems** before a breach occurs[cite: 6].
+* Monitors and analyzes vast volumes of railway network traffic logs[cite: 5].
+* Utilizes unsupervised and supervised Machine Learning models to baseline normal behavior and detect anomalies[cite: 5].
+* Integrates Threat Intelligence Feeds to categorize anomalies into specific attack vectors (e.g., DDoS, unauthorized access)[cite: 5].
+* Prevents operational disruptions to critical components like **Signaling Systems** and **Passenger Information Systems** before a breach occurs[cite: 6].
 
 ---
 
 ## 🚀 Key Features
 
-* [cite_start]**Real-Time Anomaly Detection:** Continuous monitoring of network traffic logs to flag malicious or deviant patterns instantly[cite: 4, 5].
-* [cite_start]**Machine Learning Pipeline:** Leverages robust algorithms like **Random Forest** and **Isolation Forest** for accurate classification and outlier detection[cite: 5].
-* [cite_start]**Threat Categorization:** Matches detected anomalies with real-world threat intelligence to identify specific cyber threats, such as Distributed Denial of Service (DDoS) or unauthorized access attempts[cite: 5].
-* [cite_start]**Proactive Digital Defense:** Focuses on early warning mechanisms to maintain the operational integrity and safety of national transportation networks[cite: 6, 7].
+* **Real-Time Anomaly Detection:** Continuous monitoring of network traffic logs to flag malicious or deviant patterns instantly[cite: 4, 5].
+* **Machine Learning Pipeline:** Leverages robust algorithms like **Random Forest** and **Isolation Forest** for accurate classification and outlier detection[cite: 5].
+* **Threat Categorization:** Matches detected anomalies with real-world threat intelligence to identify specific cyber threats, such as Distributed Denial of Service (DDoS) or unauthorized access attempts[cite: 5].
+* **Proactive Digital Defense:** Focuses on early warning mechanisms to maintain the operational integrity and safety of national transportation networks[cite: 6, 7].
 
 ---
 
@@ -27,8 +27,8 @@ This project implements an early-warning defense system that:
 
 * **Language:** Python
 * **Machine Learning Libraries:** Scikit-learn (Random Forest, Isolation Forest), Pandas, NumPy
-* [cite_start]**Data Source:** Network traffic logs (PCAP analysis / NetFlow logs) [cite: 5]
-* [cite_start]**Threat Intel Integration:** Structured threat intelligence feeds [cite: 5]
+* **Data Source:** Network traffic logs (PCAP analysis / NetFlow logs) [cite: 5]
+* **Threat Intel Integration:** Structured threat intelligence feeds [cite: 5]
 
 
 ---
