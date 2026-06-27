@@ -1,0 +1,6 @@
+@echo off
+echo Starting NGINX...
+start /d "C:\Users\Roshni Roy\nginx\nginx-1.31.2" nginx.exe
+echo Starting AI Guardian API...
+start /d "C:\Users\Roshni Roy\Downloads\Railway-TI-Guardian" python -m uvicorn api:app --port 8000
+echo System is now live at http://localhost
