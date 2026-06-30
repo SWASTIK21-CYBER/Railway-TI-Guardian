@@ -1,0 +1,53 @@
+# ===========================================
+# Railway-TI-Guardian Configuration
+# ===========================================
+
+paths:
+  train_data: "data/KDDTrain+.txt"
+  test_data: "data/KDDTest+.txt"
+  preprocessor: "models/preprocessor.joblib"
+  isolation_forest: "models/isolation_forest.joblib"
+  hybrid_rf_model: "models/hybrid_rf_model.joblib"
+  security_log: "logs/security_logs.txt"
+
+columns:
+  use_cols: [0, 1, 2, 3, 4, 5, 41, 42]
+  names: ["duration", "protocol_type", "service", "flag", "src_bytes", "dst_bytes", "label", "difficulty_level"]
+  categorical: ["protocol_type", "service", "flag"]
+  numerical: ["duration", "src_bytes", "dst_bytes"]
+
+model:
+  isolation_forest:
+    n_estimators: 200
+    contamination: 0.2
+    random_state: 42
+  random_forest:
+    n_estimators: 200
+    max_depth: 15
+    min_samples_split: 5
+    class_weight: "balanced"
+    random_state: 42
+
+# ===========================================
+# RRB-LB: Real-Time Reasoning & Preference Load Balancer
+# Edge-deployed prioritization logic (no cloud dependency).
+# Determines processing order + load shedding under pressure.
+# ===========================================
+rrb_lb:
+  criticality_weights:
+    high: 3
+    medium: 2
+    low: 1
+
+  urgency_weights:
+    critical: 3
+    elevated: 2
+    normal: 1
+
+  max_queue_size: 50
+  worker_threads: 2
+
+simulator:
+  events_per_batch: 5
+  interval_seconds: 2
+  attack_ratio: 0.3
